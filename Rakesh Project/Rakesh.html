@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_Alpha_Portfolio_1</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="shortcut icon" href="png-transparent-programmer-computer-icons-ninja-saga-computer-software-ninja-computer-sticker-cartoon-thumbnail.png"
+        type="image/x-icon">
+    <style>
+        body{
+            background-color: brown;
+            color:blanchedalmond;
+        }
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-image: url(Picsart_23-07-11_16-13-39-900.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        .menu {
+            background-size: 100%;
+            font-family: sans-serif;
+            background-color: black;
+        }
+        .menu img{
+            box-shadow: 0 0 15px black;
+        }
+        .menu img:hover{
+            transform: scale(1.3);
+        }
+
+        .menu button {
+            background-color: rgb(248, 244, 244);
+            color: rgb(3, 3, 3);
+            width: 90px;
+            height: 60px;
+            font-size: 1.4em;
+            font: bold;
+            border: 2px dotted black;
+            margin-left: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(3, 3, 3);
+        }
+
+        .menu-bar {
+            display: none;
+            border: 2px dotted black;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+        }
+
+        .menu ul li:hover .menu-bar {
+            display: block;
+            position: absolute;
+            background-color: rgb(250, 247, 247);
+            color: rgb(2, 2, 2);
+            margin-left: 15px;
+            list-style: none;
+        }
+
+        .menu ul li:hover .menu-bar ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu ul li:hover .menu-bar ul li {
+            width: 150px;
+            padding: 10px;
+            border-radius: 1px dotted rgb(5, 5, 5);
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .menu ul li:hover .menu-ber ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu ul li:hover .menu-bar ul li:hover {
+            background-color: rgb(2, 2, 2);
+        }
+
+        .menu ul li:hover .menu-bar ul li a:hover {
+            background-color: rgb(5, 5, 5);
+            color: rgb(252, 251, 251);
+        }
+
+        .home {
+            margin-top: 0%;
+            width: 800px;
+        }
+
+        .home p {
+            font: italic small-caps bold 14px/2 cursive;
+            font-size: 1.2em;
+            transform: translate(870px, 280px);
+            animation: move 4s;
+        }
+
+        .home p b {
+            color: red;
+            font-size: 1.4em;
+            animation: move 4s;
+        }
+
+        .home p button {
+            background-color: blue;
+            color: white;
+            size: 20px;
+            border: 3px solid blue;
+            animation: move 4s;
+        }
+
+        .home p button:hover {
+            background-color: white;
+            color: blue;
+            border: 3px solid blue;
+        }
+
+        #about {
+            background-color: black;
+            margin-top: 8%;
+            border: 3px solid white;
+            display: block;
+        }
+
+        #about .data {
+            border: 3px solid white;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            margin-right: 3%;
+            display: block;
+            transform: translate(0px, 400px);
+            
+        }
+
+
+        #about nav {
+            transform: translate(0px, -380px);
+            text-align: right;
+            margin-right: 5%;
+        }
+
+        #about nav p {
+            color: white;
+            transform: translate(-50px, -200px);
+            font-size: 4em;
+            font-family: cursive;
+            background-color:orange;
+            width: 1840px;
+            border: 2px solid white;
+        }
+
+        #about nav b {
+            color: yellow;
+            font-size: 1.5em;
+            animation: movein 14s;
+        }
+
+        #about nav b i {
+            color: red;
+            font-size: 2em;
+            animation: movein 1s4s;
+        }
+
+        #about p {
+            color: white;
+            font-size: 1em;
+        }
+
+        #about .matric{
+            display: inline-block;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+
+        #about .inter{
+            display: inline-block;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+
+        #about .btech{
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        
+        #about .matric p{
+            color:white;
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 3%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            background-color: blue;
+            text-align: center;
+            width: 380px;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .inter p{
+            color:rgb(255, 255, 255);
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            text-align: center;
+            width: 370px;
+            background-color: blue;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .btech p{
+            color:rgb(255, 255, 255);
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            text-align: center;
+            width: 350px;
+            background-color: blue;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .matric a,.inter  a,.btech a{
+            text-decoration: none;
+            color: blue;
+        }
+        #about .matric:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+        }
+        #about .inter:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+        }
+        #about .btech:hover{
+            border: 2px dotted orange;
+            box-shadow:0 0 15px orange;
+        }
+        #about .matric p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #about .inter p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #about .btech p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #projects {
+            background-color: black;
+        }
+
+        #projects nav {
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            font: cursive;
+            background-color:orange;
+        }
+
+        #projects .camera {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted green;
+            box-shadow: 0 0 15px green;
+        }
+
+        #projects .calculator {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted yellow;
+            box-shadow: 0 0 15px yellow;
+        }
+
+        #projects .network {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted skyblue;
+            box-shadow: 0 0 15px skyblue;
+        }
+
+        #projects .camera:hover  {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15,132);
+        }
+
+        #projects .calculator:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+        }
+
+        #projects .network:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+        }
+
+        #projects .camerabrief {
+            display: inline-block;
+            color: white;
+            margin-left: 6%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted green;
+            box-shadow: 0 0 15px green;
+            transform: translate(0px,-70px);
+        }
+
+        #projects .calculatorbrief {
+            display: inline-block;
+            color: white;
+            margin-left: 7.3%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted yellow;
+            box-shadow: 0 0 15px yellow;
+            transform: translate(0px,-70px);
+        }
+
+        #projects .networkbrief {
+            display: inline-block;
+            color: white;
+            margin-left: 8.1%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted skyblue;
+            box-shadow: 0 0 15px skyblue;
+            transform: translate(0px,-70px);
+        }
+        #projects .camerabrief:hover  {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+
+        #projects .calculatorbrief:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+
+        #projects .networkbrief:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+        #contact{
+            background-color: black;
+            height: 1800px;
+        }
+        #contact nav{
+            background-color:orange;
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            font: cursive;
+            transform: translate(0px,78px);
+            border: 2px solid white;
+        }
+
+        #contact ul{
+            list-style: none;
+            color: white;
+            transform: translate(0px,100px);
+            background-color: rgb(0, 0, 0);
+        }
+        #contact ul li{
+            margin-left: 5%;
+            margin-top: 5%;
+            font-size: 1.2em;
+            margin-bottom: 2%;
+        }
+        #contact ul li .icon{
+            background-color: rgb(68, 63, 63);
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 60px;
+        }
+        #contact ul li .icon .ico{
+            background-color: rgb(68,63,63);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(5px,5px);
+        }
+       #contact ul li .icon .ico i{
+            font-size: 40px;
+            border-radius: 50%;
+            position: relative;
+            text-align: center;
+            transform: translateY(10px);
+        }
+        #contact ul li .icon:hover{
+            background-color: orange;
+            box-shadow: 0 0 15px orange;
+            text-shadow: 0 0 15px orange;
+            color:orange;
+        }
+        #contact ul li .icon .ico:hover {
+            background-color: rgb(68,63,63);
+        }
+        #contact ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        @keyframes move {
+            0%{
+                transform: translate(820px,280px);
+                opacity: 60%;
+            }
+            50%{
+                transform: translate(845px,280px);
+                opacity: 80%;
+            }
+            100%{
+                transform: translate(870px,280px);
+                opacity: 100%;
+            }
+           
+        }
+        @keyframes movein {
+                0%{
+                    transform:translate(50px);
+                    color: white;
+                    opacity: 30%;
+                }
+                100%{
+                    transform: translate(0px);
+                    opacity: 100%;
+                }
+        }   
+        .image1{
+            border-radius: 60%;
+            height:200px;
+        } 
+
+    </style>
+</head>
+<table cellspacing = "20">
+<tr>
+  <td>  <image  class="image1" src = "data:image/jpeg;base64,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" alt = "Shashwat's Profile Picture"></image></td>
+  <td>   <h1>Rakesh Kumar</h1>
+    <p><em><strong><a href = "https://en.wikipedia.org/wiki/Web_developer">Web Developer</a></strong></em></p></td>
+  
+</tr>
+</table>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#"><button><b>| | |</b></button></a>
+                <div class="menu-bar">
+                    <ul>
+                        <li><a href="#menu">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="C:\Users\DELL\Desktop\Rakesh Project\rakeshProiject.html">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="home">
+        <p><b>Rakesh Kumar</b><br>
+            <ul>
+           <li>Hello,</li> 
+           <li>I am proficinet in DSA (Data Structure and Algorithms).</li> 
+           <li>I am a Frontend Developer.</li> 
+           <li>UI/UX designer</li> 
+            </ul>
+        
+    </div>
+    <!-- <a href="#contact"><img src="Picsart_23-07-11_16-52-48-021.png " width="400px"></a> -->
+    <div id="about">
+        <!-- <div class="data">
+           <img src="IMG_20230709_155721.jpg" width="700px">
+        </div> -->
+        <!-- <nav>
+            <p><i>ABOUT ME
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </i>
+            </p> -->
+            <b><i>Hello, everyone!
+                I'm damn interested in coding and learning new things about tech.
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i> -->
+                <br>
+            
+
+        
+
+        <!-- <div class="matric"><a href="https://www.facebook.com/RTPschoolRopar/">
+            <img src="Picsart_23-07-12_10-42-55-556.png" width="400px"><p>MATRICULATION</p>
+            </a>
+        </div>
+        <div class="inter"><a href="https://davschoolropar.in/">
+            <img src="Picsart_23-07-12_10-40-09-927.png" width="400px"><P>INTERMEDIATE</P>
+            </a>
+        </div>
+        <div class="btech"><a href="https://amritsar.ptu.ac.in/">
+            <img src="Picsart_23-07-12_10-39-02-421.png" width="400px"><P>PURSUING B.TECH</P>
+            </a>
+        </div>
+    </div> -->
+    <!-- <div id="projects">
+        <nav><i>PROJECTS</i></nav>
+        <div class="camera">
+            <img src="Picsart_23-07-09_18-30-21-217.png" width="400px">
+        </div>
+        <div class="calculator">
+            <img src="Picsart_23-07-09_18-30-49-977.png" width="400px">
+        </div>
+        <div class="network">
+            <img src="Picsart_23-07-09_18-31-14-627.png" width="400px">
+        </div>
+        <div class="camerabrief">IP Webcam turns your phone into a network camera with <br> multiple viewing
+            your camera on any platform with <br>VLC player or web browser.</div>
+        <div class="calculatorbrief">A simple calculator application using HTML, CSS, <br> Javascript. Check out  the Django
+            project folder to <br> view the files created  for the calculator app using Dja...</div>
+        <div class="networkbrief">Network applications are computer applications that <br>in a computer network.
+            These applications  talk to <br>each other by plugging ...</div>
+    </div> -->
+    <div id="contact">
+        <nav><i>CONTACT DETAILS</i></nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/rakesh kumar-2a2911234/"><div class="icon"><div class="ico"><i class="fa-brands fa-linkedin"></i></div></div>https://www.linkedin.com/in/aditya-vimal-2a2911234/</a></li>
+            <li><a href="https://github.com/rakesh0786"><div class="icon"><div class="ico"><i class="fa-brands fa-github"></i></div></div>https://github.com/adityavimal15</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100023449277609"><div class="icon"><div class="ico"><i class="fa-brands fa-facebook"></i></div></div>https://www.facebook.com/profile.php?id=100023449277609</a></li>
+            <li><a href="https://www.instagram.com/i_rakesh/"><div class="icon"><div class="ico"><i class="fa-brands fa-instagram"></i></div></div>https://www.instagram.com/i_adityavimal15980/</a></li>
+            <li><a href="https://www.instagram.com/i_rakesh/"><div class="icon"><div class="ico"><i class="fa-solid fa-envelope"></i></div></div>aditayavimal15@gmail.com</a></li>
+            <li><div class="icon"><div class="ico"><i class="fa-brands fa-whatsapp"></i></div></div>**********</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
